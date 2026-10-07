@@ -47,6 +47,8 @@ body {
 }
 
 .plan {
+  display: flex;
+  flex-direction: column;
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 0;
@@ -97,6 +99,7 @@ body {
 }
 
 .btn {
+  position: relative;
   display: inline-block;
   padding: 12px 28px;
   border-radius: 8px;
@@ -104,4 +107,5 @@ body {
   color: #ffffff;
   text-decoration: none;
   font-weight: 600;
+  margin-top: auto;
 }
