@@ -69,8 +69,12 @@ function removeItem(id) {
 }
 
 function applyPromo() {
-  if ((promoInput.value = 'SALE10')) {
+  const codeForDiscount = promoInput.value.trim().toUpperCase();
+
+  if (codeForDiscount === 'SALE10') {
     discount = 0.1;
+  } else {
+    discount = 0;
   }
   renderCart();
 }
